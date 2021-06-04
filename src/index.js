@@ -13,7 +13,6 @@ client.on('ready', async () => {
 
 	const GCommandsClient = new GCommands(client, {
 		cmdDir: 'src/commands/',
-		eventDir: 'src/events/',
 		language: 'english',
 		ownLanguageFile: require('./config/message.json'),
 		unkownCommandMessage: true,
