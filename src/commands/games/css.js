@@ -46,15 +46,15 @@ module.exports = (async () => {
 		minArgs: 1,
 		expectedArgs: [
 			{
-				name: 'ip',
-				description: 'Enter CS:S Server IP Address',
-				type: 3
-			},
-			{
 				name: 'server',
 				description: 'Select a CS:S Server',
 				type: 3,
 				choices: choices
+			},
+			{
+				name: 'ip',
+				description: 'Enter CS:S Server IP Address',
+				type: 3
 			}
 		],
 		run: async ({ respond }, arrayArgs, args) => {
