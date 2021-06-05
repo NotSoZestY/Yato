@@ -3,7 +3,7 @@
 const axios = require('axios');
 const { MessageEmbed } = require('discord.js');
 const emojis = require('../../config/emojis.json');
-const { MessageButton } = require('gcommands');
+const { MessageButton, MessageActionRow } = require('gcommands');
 const colors = require('../../config/colors.json');
 
 require('dotenv').config();
@@ -64,9 +64,11 @@ module.exports = {
 			.setLabel('Join')
 			.setURL(`https://discord.gg/${invite.code}`)
 			.toJSON();
+		const buttonRow = new MessageActionRow()
+			.addComponent(button);
 		return respond({
 			content: `${TickYes}  **YouTube Together** started in \`${channel.name}\``,
-			components: button
+			components: buttonRow
 		});
 	}
 };
