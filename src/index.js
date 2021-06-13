@@ -20,7 +20,7 @@ client.on('ready', async () => {
 			slash: 'both',
 			prefix: `^<@!?${client.user.id}> `
 		},
-		defaultCooldown: '3s'
+		defaultCooldown: 3
 	});
 
 	GCommandsClient.on('debug', (debug) => {
