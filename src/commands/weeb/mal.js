@@ -150,7 +150,7 @@ module.exports = {
 			if (profile.favorites.anime[0]) value.push(`• Anime: **[${profile.favorites.anime[0].name}](${profile.favorites.anime[0].url})**`);
 			if (profile.favorites.manga[0]) value.push(`• Manga: **[${profile.favorites.manga[0].name}](${profile.favorites.manga[0].url})**`);
 
-			embed.addField('⭐  Favourites', value);
+			if (value.length) embed.addField('⭐  Favourites', value);
 		}
 		if (profile.image_url) embed.setThumbnail(profile.image_url);
 
