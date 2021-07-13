@@ -5,7 +5,7 @@ module.exports = {
 	name: 'editcssserver',
 	slash: true,
 	description: 'Edit saved CS:S Server data on database',
-	guildOnly: '810474313245261824',
+	guildOnly: '674567417434996736',
 	userOnly: ['442525125192187905'],
 	expectedArgs: [
 		{
