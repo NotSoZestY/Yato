@@ -23,6 +23,10 @@ client.on('ready', async () => {
 		defaultCooldown: '3s'
 	});
 
+	GCommandsClient.on('log', (log) => {
+		console.log(log);
+	});
+
 	GCommandsClient.on('debug', (debug) => {
 		console.log(debug);
 	});
