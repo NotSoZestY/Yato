@@ -6,7 +6,7 @@ module.exports = {
 	slash: true,
 	description: 'Edit saved CS:S Server data on database',
 	guildOnly: '674567417434996736',
-	userOnly: ['442525125192187905'],
+	userOnly: ['442525125192187905', '625415951906635789'],
 	expectedArgs: [
 		{
 			name: 'cmd',
