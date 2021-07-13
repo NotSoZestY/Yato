@@ -20,7 +20,7 @@
     "discord.js": "^12.5.3",
     "dotenv": "^9.0.2",
     "gamedig": "^3.0.5",
-    "gcommands": "^4.1.5",
+    "gcommands": "^4.3.0",
     "jikan-node": "^1.2.1",
     "moment": "^2.29.1",
     "mongoose": "^5.12.12",

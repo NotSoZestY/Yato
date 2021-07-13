@@ -35,12 +35,12 @@ module.exports = {
 			});
 		} else {
 			const nextPage = new MessageButton()
-				.setStyle('blurple')
+				.setStyle('gray')
 				.setLabel('Next')
 				.setID('next')
 				.toJSON();
 			const previousPage = new MessageButton()
-				.setStyle('blurple')
+				.setStyle('gray')
 				.setLabel('Back')
 				.setID('previous')
 				.toJSON();
