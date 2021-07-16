@@ -33,6 +33,19 @@ module.exports = {
 		return domain;
 	},
 
+	formatPerms(perm) {
+		return perm
+			.toLowerCase()
+			.replace(/(^|"|_)(\S)/g, (ss) => ss.toUpperCase())
+			.replace(/_/g, ' ')
+			.replace(/Guild/g, 'Server')
+			.replace(/Use Vad/g, 'User Voice Activity');
+	},
+
+	formatArray(array, type = 'conjunction') {
+		return new Intl.ListFormat('en-GB', { style: 'short', type: type }).format(array);
+	},
+
 	async animeMangaSearch(cmd, query, channel) {
 		const MediaStatusToString = {
 			FINISHED: 'Finished',

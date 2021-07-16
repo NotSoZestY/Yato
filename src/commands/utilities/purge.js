@@ -1,4 +1,5 @@
 const { MessageEmbed } = require('discord.js');
+const { MessageButton, MessageActionRow } = require('gcommands');
 const emojis = require('../../config/emojis.json');
 const colors = require('../../config/colors.json');
 
@@ -41,9 +42,22 @@ module.exports = {
 		await channel.bulkDelete(value).catch(() => {
 			embed
 				.setColor(colors.red)
-				.setDescription(`${TickNo}\u3000You can't clear messages which are older than 14 days`);
+				.setDescription([
+					`${TickNo}\u3000An error occured, make sure Yato has access to the channel and has **Manage Messages** permission`,
+					`*Messages older than 14 days will not purge, if you still face problems join the support server and report your problem.*`
+				]);
+
+			const supportButton = new MessageButton()
+				.setStyle('url')
+				.setLabel(`Support Server`)
+				.setURL(`https://discord.gg/mm7Ke8T`)
+				.toJSON();
+
+			const row = new MessageActionRow()
+				.addComponent(supportButton);
 			respond({
 				content: embed,
+				components: row,
 				ephemeral: true
 			});
 			return;
