@@ -1,6 +1,6 @@
 {
   "name": "yato",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Yato Discord Bot with interactions support",
   "main": "src/index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "discord.js": "^12.5.3",
     "dotenv": "^9.0.2",
     "gamedig": "^3.0.5",
-    "gcommands": "^4.3.0",
+    "gcommands": "^5.2.4",
     "jikan-node": "^1.2.1",
     "moment": "^2.29.1",
     "mongoose": "^5.12.12",

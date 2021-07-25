@@ -1,5 +1,6 @@
 /* eslint-disable no-process-env */
 require('dotenv').config();
+require('./structures/CanvasUtils').initializeHelpers();
 const Discord = require('discord.js');
 const { GCommands } = require('gcommands');
 const mongoose = require('mongoose');
