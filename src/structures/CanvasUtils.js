@@ -24,9 +24,9 @@ module.exports = class CanvasUtils {
 		// Initiliaze fonts
 		registerFont('fonts/Montserrat-Bold.ttf', { family: 'Montserrat', weight: 'bold' });
 		registerFont('fonts/Segoe UI.ttf', { family: 'Segoe UI' });
-		registerFont('fonts/Segoe UI Bold.ttf', { family: 'Segoe UI Bold', weight: 'bold' });
-		registerFont('fonts/Segoe UI Italic.ttf', { family: 'Segoe UI Italic', style: 'italic' });
-		registerFont('fonts/Segoe UI Bold Italic.ttf', { family: 'Segoe UI Bold Italic', style: 'italic', weight: 'bold' });
+		registerFont('fonts/Segoe UI Bold.ttf', { family: 'Segoe UI', weight: 'bold' });
+		registerFont('fonts/Segoe UI Italic.ttf', { family: 'Segoe UI', style: 'italic' });
+		registerFont('fonts/Segoe UI Bold Italic.ttf', { family: 'Segoe UI', style: 'italic', weight: 'bold' });
 
 		// Context functions
 		Context2d.prototype.roundImage = function (img, x, y, w, h, r) {
