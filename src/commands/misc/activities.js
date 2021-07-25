@@ -24,7 +24,7 @@ module.exports = class Activities extends Command {
 			name: 'activities',
 			slash: true,
 			description: 'The all new Discord Activities (BETA)',
-			guildOnly: '674567417434996736',
+			// guildOnly: '674567417434996736',
 			args: [
 				{
 					name: 'voicechannel',
