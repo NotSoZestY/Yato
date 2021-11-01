@@ -17,7 +17,7 @@ const gameServerFetcher = async (server) => {
 
 const serverEmbedMaker = async (embed, serverQuery, server, list) => {
 	embed.setTitle(serverQuery.name)
-		.setDescription(`Click below to join... (**CM Only**)\n<clientmod://connect/${server.host}:${server.port}`)
+		.setDescription(`Click below to join... (**CM Only**)\n<clientmod://connect/${server.host}:${server.port}>`)
 		.setColor(colors.default)
 		.setURL(`https://www.gametracker.com/server_info/${server.host}:${server.port}`)
 		.addField('🗺️  Map', `${serverQuery.map}`, true)
